@@ -1,0 +1,51 @@
+.form {
+	max-width: 200px;
+	max-height: 450px;
+	padding: 20px;
+	background: #173458;
+	position: relative;
+	border-radius: 20px;
+	margin-top: 40px;
+}
+.input {
+	border-color: #f68429;
+	background: transparent;
+	border-radius: 20px;
+	color: blue;
+	padding: 2px;
+	caret-color:green ;
+	}
+	h2 {
+		color: gold;
+	}
+	
+	
+}
+.button {
+	padding: 9px 25px;
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transitions: all 0.3s ease 0s;
+}
+
+.button:hover {
+	background-color: rgba(0,136,169,0.8);
+}
+
+.forgot-password {
+    color: white;
+}
+ .strength-meter {
+        width: 70px;
+        height: 2px;
+        background-color: #ddd;
+        border-radius: 5px;
+        overflow: hidden;
+      }
+      .strength-meter-fill {
+        height: 5px;
+        background-color: green;
+        transition: width 0.5s ease;
+      }

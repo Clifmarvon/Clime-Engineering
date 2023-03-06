@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>Login</title>
+   <link href="C:\Users\Clif Marvon\Documents\html website\sign in .css" rel="stylesheet" id="css"
+   <head>
+    <meta charset="UTF-8">
+    <title>CLIF MARVON ENGINEERING</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Clif Marvon\Documents\html website\chat 1.css">
+  </head>
+  <body>
+    <header>
+	<img src="C:\Users\Clif Marvon\Documents\html website\site logo.png"alt="CLIF MARVON ENGINEERING (CLIME) logo" />
+      <h1>CLIF MARVON ENGINEERING</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="C:\Users\Clif Marvon\Documents\html website\from chat.html">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+		<li><a href="C:\Users\Clif Marvon\Documents\html website\sign up.html">Join</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+  <center>
+  <center>
+<div class="form">
+<div class="avatrer">
+<i class="fas fa user"></i>
+<center>
+</div>
+<h2>LOGIN</h2>
+<label for="username"></label> 
+<input type="text" class="input" autocomplete="off" id="username" placeholder="username"><p>
+<label for="password"></label> 
+ <input type="password"  class="input" id="password" id="password" autocomplete="off" onkeyup="checkPasswordStrength()" placeholder="password"/>
+    <div class="strength-meter">
+      <div id="strength-meter-fill" class="strength-meter-fill"></div>
+    </div>
+    <p id="password-strength-message"></p>
+   <script>
+      function checkPasswordStrength() {
+        var password = document.getElementById("password").value;
+        var strengthMeterFill = document.getElementById("strength-meter-fill");
+        var passwordStrengthMessage = document.getElementById("password-strength-message");
+
+        // Check the password strength
+        var strength = 0;
+        if (password.length >= 8) strength += 1;
+        if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) strength += 1;
+        if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) strength += 1;
+        if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/)) strength += 1;
+
+        // Update the password strength meter and message
+        switch (strength) {
+          case 0:
+            strengthMeterFill.style.width = "20%";
+            strengthMeterFill.style.backgroundColor = "red";
+           
+            break;
+          case 1:
+            strengthMeterFill.style.width = "40%";
+            strengthMeterFill.style.backgroundColor = "orange";
+           
+            break;
+          case 2:
+            strengthMeterFill.style.width = "60%";
+            strengthMeterFill.style.backgroundColor = "yellow";
+           
+            break;
+          case 3:
+            strengthMeterFill.style.width = "80%";
+            strengthMeterFill.style.backgroundColor = "green";
+           
+            break;
+          case 4:
+            strengthMeterFill.style.width = "100%";
+            strengthMeterFill.style.backgroundColor = "green";
+           
+            break;
+        }
+      }
+    </script>
+
+<a class="forgot-password" href="#">Forgot Password?</a></a> <br>
+<button><a href="C:\Users\Clif Marvon\Documents\html website\sign up.html">Join</button></a1>
+<button><a href="C:\Users\Clif Marvon\Documents\html website\sign in .html">Login</button></a>
+</center>
+</center>
+
+      </form>
+    </div>
+  </body>
+</html>
+</center>
